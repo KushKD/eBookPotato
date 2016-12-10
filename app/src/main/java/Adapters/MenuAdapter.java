@@ -10,7 +10,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.honsol.potatoebook.CP_EarthingUp;
+import com.honsol.potatoebook.CP_Fertilization;
 import com.honsol.potatoebook.CP_Introduction;
+import com.honsol.potatoebook.CP_Irrigation;
+import com.honsol.potatoebook.CP_LandPrepration;
+import com.honsol.potatoebook.CP_PlantProtection;
+import com.honsol.potatoebook.CP_Planting;
+import com.honsol.potatoebook.CP_SeedPrepration;
+import com.honsol.potatoebook.CP_Weeding;
 import com.honsol.potatoebook.MainActivity;
 import com.honsol.potatoebook.R;
 
@@ -82,15 +90,36 @@ public class MenuAdapter extends BaseAdapter {
                     }catch (Exception e){
                         Toast.makeText(context, "Please Restart the application", Toast.LENGTH_LONG).show();
                     }
-                }else if (result[position].toString().equalsIgnoreCase("Complaint")){
+                }else if (result[position].toString().equalsIgnoreCase("Seed preparation")){
                     // Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
-                   // Intent intent = new Intent(context,AddComplaint.class);
-                   // context.startActivity(intent);
-                }else if (result[position].toString().equalsIgnoreCase("Travel Tracking")){
+                    Intent intent = new Intent(context,CP_SeedPrepration.class);
+                    context.startActivity(intent);
+                }else if (result[position].toString().equalsIgnoreCase("Land preparation")){
                     // Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
-                   // Intent intent = new Intent(context,UberTesting.class);  //TravelTracking
-                    //context.startActivity(intent);
-                }else{
+                    Intent intent = new Intent(context,CP_LandPrepration.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].toString().equalsIgnoreCase("Planting")){
+                    Intent intent = new Intent(context,CP_Planting.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Fertilization")) {
+                    Intent intent = new Intent(context,CP_Fertilization.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Irrigation")) {
+                    Intent intent = new Intent(context,CP_Irrigation.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Weeding")) {
+                    Intent intent = new Intent(context,CP_Weeding.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Earthing up")) {
+                    Intent intent = new Intent(context,CP_EarthingUp.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Plant protection")) {
+                    Intent intent = new Intent(context,CP_PlantProtection.class);  //TravelTracking
+                    context.startActivity(intent);
+                }
+                else
+
+                {
                     Toast.makeText(context, "Something went wrong.", Toast.LENGTH_LONG).show();
                 }
             }

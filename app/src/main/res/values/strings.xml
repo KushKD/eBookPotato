@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Potato eBook</string>
+    <string name="title_activity_cp__plant_protection">CP_PlantProtection</string>
 </resources>

@@ -15,7 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CP_Introduction"></activity>
+        <activity android:name=".CP_Introduction" />
+        <activity android:name=".CP_SeedPrepration" />
+        <activity android:name=".CP_LandPrepration" />
+        <activity android:name=".CP_Planting" />
+        <activity android:name=".CP_Fertilization" />
+        <activity android:name=".CP_Irrigation" />
+        <activity android:name=".CP_Weeding" />
+        <activity android:name=".CP_EarthingUp" />
+        <activity android:name=".CP_PlantProtection"></activity>
     </application>
 
 </manifest>

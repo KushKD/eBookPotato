@@ -1,5 +1,6 @@
 package com.honsol.potatoebook;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,7 +46,8 @@ public class CP_Introduction extends AppCompatActivity implements TextLinkClickL
     public void onTextLinkClick(View textView, String clickedString) {
         //Log.e("Hyperlink is :: " + clickedString, "Hyperlink is :: " + clickedString);
         if(clickedString.equalsIgnoreCase("_seed")){
-            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent intent = new Intent(CP_Introduction.this,CP_SeedPrepration.class);
+            startActivity(intent);
         }else if(clickedString.equalsIgnoreCase("_land")){
             Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
         }else if(clickedString.equalsIgnoreCase("_planting")){
