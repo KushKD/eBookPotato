@@ -21,9 +21,13 @@ import com.honsol.potatoebook.CP_MainActivity;
 import com.honsol.potatoebook.CP_Planting;
 import com.honsol.potatoebook.CP_SeedPrepration;
 import com.honsol.potatoebook.CP_Weeding;
+import com.honsol.potatoebook.GrowingConditions;
+import com.honsol.potatoebook.Growth_and_Development;
 import com.honsol.potatoebook.Main_Activity;
 import com.honsol.potatoebook.PoP_List;
 import com.honsol.potatoebook.R;
+import com.honsol.potatoebook.True_Potato_Seed;
+import com.honsol.potatoebook.Varieties;
 
 import java.io.File;
 
@@ -131,23 +135,22 @@ public class Main_MenuAdapter extends BaseAdapter {
                         Toast.makeText(context, "File Not Found", Toast.LENGTH_LONG).show();
                     }
                 } else if (result[position].toString().equalsIgnoreCase("Cultural Practices")) {
-                    // Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(context, CP_MainActivity.class);  //TravelTracking
+                    Intent intent = new Intent(context, CP_MainActivity.class);
                     context.startActivity(intent);
                 } else if (result[position].toString().equalsIgnoreCase("True Potato Seed")) {
-                    Intent intent = new Intent(context, CP_Planting.class);  //TravelTracking
+                    Intent intent = new Intent(context, True_Potato_Seed.class);
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Varieties")) {
-                    Intent intent = new Intent(context, CP_Fertilization.class);  //TravelTracking
+                    Intent intent = new Intent(context, Varieties.class);
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Growing Conditions")) {
-                    Intent intent = new Intent(context, CP_Irrigation.class);  //TravelTracking
+                    Intent intent = new Intent(context, GrowingConditions.class);
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Groth and Development")) {
-                    Intent intent = new Intent(context, CP_Weeding.class);  //TravelTracking
+                    Intent intent = new Intent(context, Growth_and_Development.class);
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Package of Practices")) {
-                    Intent intent = new Intent(context, PoP_List.class);  //TravelTracking
+                    Intent intent = new Intent(context, PoP_List.class);
                     context.startActivity(intent);
                 } else
 

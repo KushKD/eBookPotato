@@ -34,7 +34,11 @@
         <activity android:name=".CP_Processing" />
         <activity android:name=".CP_MainActivity" />
         <activity android:name=".PDFViewActivity" />
-        <activity android:name=".PoP_List"></activity>
+        <activity android:name=".PoP_List" />
+        <activity android:name=".True_Potato_Seed" />
+        <activity android:name=".Varieties" />
+        <activity android:name=".GrowingConditions" />
+        <activity android:name=".Growth_and_Development"></activity>
     </application>
 
 </manifest>
