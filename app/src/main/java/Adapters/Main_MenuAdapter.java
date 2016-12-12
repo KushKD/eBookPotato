@@ -22,6 +22,7 @@ import com.honsol.potatoebook.CP_Planting;
 import com.honsol.potatoebook.CP_SeedPrepration;
 import com.honsol.potatoebook.CP_Weeding;
 import com.honsol.potatoebook.Main_Activity;
+import com.honsol.potatoebook.PoP_List;
 import com.honsol.potatoebook.R;
 
 import java.io.File;
@@ -146,7 +147,7 @@ public class Main_MenuAdapter extends BaseAdapter {
                     Intent intent = new Intent(context, CP_Weeding.class);  //TravelTracking
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Package of Practices")) {
-                    Intent intent = new Intent(context, CP_EarthingUp.class);  //TravelTracking
+                    Intent intent = new Intent(context, PoP_List.class);  //TravelTracking
                     context.startActivity(intent);
                 } else
 

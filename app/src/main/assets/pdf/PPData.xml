@@ -1,0 +1,47 @@
+<DFSC>
+
+    <dfscdata>
+        <sno>1</sno>
+        <filename>NW_Hills.pdf</filename>
+        <Name>North-western hills</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>2</sno>
+        <filename>NE_Hills.pdf</filename>
+        <Name>North-eastern hills</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>3</sno>
+        <filename>Southhills.pdf</filename>
+        <Name>Southern hills</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>4</sno>
+        <filename>NW_Plains.pdf</filename>
+        <Name>North-western plains</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>5</sno>
+        <filename>CINGanPlains.pdf</filename>
+        <Name>Central indo-gangetic plains</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>6</sno>
+        <filename>NE_Plains.pdf</filename>
+        <Name>North-eastern plains</Name>
+    </dfscdata>
+
+    <dfscdata>
+        <sno>7</sno>
+        <filename>Platau.pdf</filename>
+        <Name>Plateau region</Name>
+    </dfscdata>
+
+
+
+</DFSC>

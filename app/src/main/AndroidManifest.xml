@@ -34,6 +34,7 @@
         <activity android:name=".CP_Processing" />
         <activity android:name=".CP_MainActivity" />
         <activity android:name=".PDFViewActivity" />
+        <activity android:name=".PoP_List"></activity>
     </application>
 
 </manifest>
