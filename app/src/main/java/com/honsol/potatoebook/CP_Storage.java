@@ -1,0 +1,90 @@
+package com.honsol.potatoebook;
+
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
+import android.text.method.MovementMethod;
+import android.util.Log;
+import android.view.View;
+
+import Interfaces.TextLinkClickListener;
+import Presentation.LinkEnabledTextView;
+
+public class CP_Storage  extends AppCompatActivity implements TextLinkClickListener {
+
+    private LinkEnabledTextView check;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cp__storage);
+        String text  =  "About 80% of the potato production in India is in the Indo Gangetic plains.  The produce is harvested in January/February and summer sets in soon after.  Therefore, proper storage is a must to minimize losses since potato is a semi perishable crop. . It has been estimated that under tropical and sub-tropical conditions, losses due to poor handling and storage can amount to 40-50%. The losses during storage can be _physiological as well as _pathological in nature. Proper agronomic practices would minimise physiological losses while adequate pest and disease management is essential for minimising pathological losses During storage, various _biochemical changes in the _carbohydrate_content, _nitrogen_fractions, _enzyme_systems etc take place in the tubers.  These affect the quality of the stored tubers.  Therefore, the method of storage is an important consideration.  Normally for seed purposes it is advisable to store in _cold_stores since the seed quality is not impaired when stored in cold stores.  However, for _processing_storage under warmer temperatures of 10-120 C is preferable.  In this case _sprout_inhibition becomes important. _TCNB, _MH, _CIPC and some _natural_substance and even _irradiation have been found effective.  Some times due to lack of space and/or cost, potatoes are also stored in _country_stores and many improvised country stores are being adopted in many parts of the country.";
+        check = (LinkEnabledTextView)findViewById(R.id.linkenabledtextview) ;
+        // check = new LinkEnabledTextView(this, null);
+        check.setOnTextLinkClickListener(this);
+        check.gatherLinksForText(text);
+        check.setTextColor(Color.BLACK);
+        check.setLinkTextColor(Color.BLUE);
+        // setContentView(check);
+
+        MovementMethod m = check.getMovementMethod();
+        if ((m == null) || !(m instanceof LinkMovementMethod)) {
+            if (check.getLinksClickable()) {
+                check.setMovementMethod(LinkMovementMethod.getInstance());
+            }
+        }
+    }
+
+    @Override
+    public void onTextLinkClick(View textView, String clickedString) {
+        if(clickedString.equalsIgnoreCase("_physiological")){
+            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_pathological")){
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_biochemical")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_carbohydrate_content")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_nitrogen_fractions,")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_enzyme_systems")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_cold_stores ")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_processing_storage")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_sprout_inhibition")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_TCNB")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_MH")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_CIPC")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_natural_substance")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_irradiation")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else if(clickedString.equalsIgnoreCase("_country stores")) {
+            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+        else {
+            Log.e("Hyperlink is :x: " + clickedString, "Hyperlink is :: " + clickedString);
+        }
+    }
+}

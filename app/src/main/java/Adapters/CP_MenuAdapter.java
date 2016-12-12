@@ -12,28 +12,33 @@ import android.widget.Toast;
 
 import com.honsol.potatoebook.CP_EarthingUp;
 import com.honsol.potatoebook.CP_Fertilization;
+import com.honsol.potatoebook.CP_Harvesting;
+import com.honsol.potatoebook.CP_Haulmscutting;
 import com.honsol.potatoebook.CP_Introduction;
 import com.honsol.potatoebook.CP_Irrigation;
 import com.honsol.potatoebook.CP_LandPrepration;
 import com.honsol.potatoebook.CP_PlantProtection;
 import com.honsol.potatoebook.CP_Planting;
+import com.honsol.potatoebook.CP_Processing;
 import com.honsol.potatoebook.CP_SeedPrepration;
+import com.honsol.potatoebook.CP_Storage;
 import com.honsol.potatoebook.CP_Weeding;
-import com.honsol.potatoebook.MainActivity;
+import com.honsol.potatoebook.CP_sortingGrading;
+import com.honsol.potatoebook.CP_MainActivity;
 import com.honsol.potatoebook.R;
 
 /**
  * Created by kuush on 12/10/2016.
  */
 
-public class MenuAdapter extends BaseAdapter {
+public class CP_MenuAdapter extends BaseAdapter {
 
     String [] result;
     Context context;
     int [] imageId;
     private static LayoutInflater inflater=null;
 
-    public MenuAdapter(MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
+    public CP_MenuAdapter(CP_MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
         // TODO Auto-generated constructor stub
         result=prgmNameList;
         context=mainActivity;
@@ -115,6 +120,22 @@ public class MenuAdapter extends BaseAdapter {
                     context.startActivity(intent);
                 }else if(result[position].equalsIgnoreCase("Plant protection")) {
                     Intent intent = new Intent(context,CP_PlantProtection.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Halum cutting")){
+                    Intent intent = new Intent(context,CP_Haulmscutting.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Harvesting")){
+                    Intent intent = new Intent(context,CP_Harvesting.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Sorting & gading")){
+                    Intent intent = new Intent(context,CP_sortingGrading.class);  //TravelTracking
+                    context.startActivity(intent);
+                }
+                else if(result[position].equalsIgnoreCase("Storage")){
+                    Intent intent = new Intent(context,CP_Storage.class);  //TravelTracking
+                    context.startActivity(intent);
+                }else if(result[position].equalsIgnoreCase("Processing")){
+                    Intent intent = new Intent(context,CP_Processing.class);  //TravelTracking
                     context.startActivity(intent);
                 }
                 else

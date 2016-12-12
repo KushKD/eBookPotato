@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Main_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,14 @@
         <activity android:name=".CP_Irrigation" />
         <activity android:name=".CP_Weeding" />
         <activity android:name=".CP_EarthingUp" />
-        <activity android:name=".CP_PlantProtection"></activity>
+        <activity android:name=".CP_PlantProtection" />
+        <activity android:name=".CP_Haulmscutting" />
+        <activity android:name=".CP_Harvesting" />
+        <activity android:name=".CP_sortingGrading" />
+        <activity android:name=".CP_Storage" />
+        <activity android:name=".CP_Processing" />
+        <activity android:name=".CP_MainActivity" />
+        <activity android:name=".PDFViewActivity" />
     </application>
 
 </manifest>

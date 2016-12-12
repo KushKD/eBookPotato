@@ -7,9 +7,9 @@ import android.widget.GridView;
 
 import java.util.ArrayList;
 
-import Adapters.MenuAdapter;
+import Adapters.CP_MenuAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class CP_MainActivity extends AppCompatActivity {
 
     GridView gv;
     Context context;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             "Plant protection",
             "Halum cutting",
             "Harvesting",
-            "Sorting & gading ",
+            "Sorting & gading",
             "Storage",
             "Processing"};
 
@@ -54,6 +54,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         gv = (GridView) findViewById(R.id.gridView1);
-        gv.setAdapter(new MenuAdapter(this, prgmNameList, prgmImages));
+        gv.setAdapter(new CP_MenuAdapter(this, prgmNameList, prgmImages));
     }
 }
