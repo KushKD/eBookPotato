@@ -1,6 +1,7 @@
 package Utils;
 
 import android.content.Context;
+import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
@@ -14,13 +15,13 @@ import java.io.InputStream;
 
 public class Helper {
 
-    public static String getAssetsPdfPath(Context context) {
-        String filePath = context.getFilesDir() + File.separator + "sample.pdf";
+    public static String getAssetsPdfPath(Context context ,String Name) {
+        String filePath = context.getFilesDir() + File.separator + Name;
         File destinationFile = new File(filePath);
 
         try {
             FileOutputStream outputStream = new FileOutputStream(destinationFile);
-            InputStream inputStream = context.getAssets().open("sample.pdf");
+            InputStream inputStream = context.getAssets().open(Name);
             byte[] buffer = new byte[1024];
             int length = 0;
             while ((length = inputStream.read(buffer)) != -1) {
@@ -34,4 +35,6 @@ public class Helper {
 
         return destinationFile.getPath();
     }
+
+
 }
