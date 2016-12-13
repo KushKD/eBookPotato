@@ -66,7 +66,8 @@
         <activity android:name=".Micronutrientdeficiencies" />
         <activity android:name=".Relationship_between_micro_nutrients" />
         <activity android:name=".TimeOfAppliaction" />
-        <activity android:name=".SourceMicro"></activity>
+        <activity android:name=".SourceMicro" />
+        <activity android:name=".PhosphorusandPotash"></activity>
     </application>
 
 </manifest>

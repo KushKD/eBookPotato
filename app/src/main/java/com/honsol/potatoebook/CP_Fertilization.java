@@ -58,7 +58,8 @@ public class CP_Fertilization extends AppCompatActivity implements TextLinkClick
             Intent i = new Intent(CP_Fertilization.this,Nitrogen.class);
             startActivity(i);
         }else if(clickedString.equalsIgnoreCase("_Phosphorous_and_potash")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent i = new Intent(CP_Fertilization.this,PhosphorusandPotash.class);
+            startActivity(i);
         }else if(clickedString.equalsIgnoreCase("_calcium")) {
             Intent i = new Intent(CP_Fertilization.this,CalciumnMagnisium.class);
             startActivity(i);
