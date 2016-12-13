@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#282a35"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="Fertilization"
+            android:text="Use of slow release N sources"
             android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -51,6 +51,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:gravity="center|center_horizontal|center_vertical"
                     android:orientation="horizontal">
 

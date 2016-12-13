@@ -47,7 +47,26 @@
         <activity android:name=".Seed_Cutting" />
         <activity android:name="._Precautions_to_be_taken" />
         <activity android:name=".Preplantingtillage" />
-        <activity android:name=".Postplantingtillage"></activity>
+        <activity android:name=".Postplantingtillage" />
+        <activity android:name=".Methodofplanting" />
+        <activity android:name=".Nitrogen" />
+        <activity android:name=".ImportanceOfN" />
+        <activity android:name=".Amount" />
+        <activity android:name=".Time" />
+        <activity android:name=".Source" />
+        <activity android:name=".UseofslowreleaseNsources" />
+        <activity android:name=".VarietyNitrogen" />
+        <activity android:name=".SplitsNitrogen" />
+        <activity android:name=".FoliarfeedingNitrogen" />
+        <activity android:name=".Residualeffect" />
+        <activity android:name=".CalciumnMagnisium" />
+        <activity android:name=".Sulphur" />
+        <activity android:name=".Micronutrient" />
+        <activity android:name=".Plantprocesses" />
+        <activity android:name=".Micronutrientdeficiencies" />
+        <activity android:name=".Relationship_between_micro_nutrients" />
+        <activity android:name=".TimeOfAppliaction" />
+        <activity android:name=".SourceMicro"></activity>
     </application>
 
 </manifest>

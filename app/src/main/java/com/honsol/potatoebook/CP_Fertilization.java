@@ -1,5 +1,6 @@
 package com.honsol.potatoebook;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
@@ -14,6 +16,7 @@ import Presentation.LinkEnabledTextView;
 public class CP_Fertilization extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
+    Button back_Bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,14 @@ public class CP_Fertilization extends AppCompatActivity implements TextLinkClick
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CP_Fertilization.this.finish();
+            }
+        });
     }
 
     @Override
@@ -44,15 +55,19 @@ public class CP_Fertilization extends AppCompatActivity implements TextLinkClick
         if(clickedString.equalsIgnoreCase("_fertilization")){
             Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
         }else if(clickedString.equalsIgnoreCase("_Nitrogen")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent i = new Intent(CP_Fertilization.this,Nitrogen.class);
+            startActivity(i);
         }else if(clickedString.equalsIgnoreCase("_Phosphorous_and_potash")) {
             Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
         }else if(clickedString.equalsIgnoreCase("_calcium")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent i = new Intent(CP_Fertilization.this,CalciumnMagnisium.class);
+            startActivity(i);
         }else if(clickedString.equalsIgnoreCase("_sulphur")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
-        }else if(clickedString.equalsIgnoreCase("_micronutrients ")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent i = new Intent(CP_Fertilization.this,Sulphur.class);
+            startActivity(i);
+        }else if(clickedString.equalsIgnoreCase("_micronutrients")) {
+            Intent i = new Intent(CP_Fertilization.this,Micronutrient.class);
+            startActivity(i);
         }else
         {
             Log.e("Hyperlink is :x: " + clickedString, "Hyperlink is :: " + clickedString);

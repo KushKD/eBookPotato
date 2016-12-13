@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
@@ -13,6 +14,7 @@ import Presentation.LinkEnabledTextView;
 public class CP_Haulmscutting extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
+    Button back_Bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,14 @@ public class CP_Haulmscutting extends AppCompatActivity implements TextLinkClick
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CP_Haulmscutting.this.finish();
+            }
+        });
     }
 
     @Override

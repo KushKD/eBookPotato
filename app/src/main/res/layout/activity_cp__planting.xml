@@ -1,17 +1,151 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_cp__introduction"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.honsol.potatoebook.CP_Introduction">
+    android:layout_weight="6"
+    android:orientation="vertical">
 
-    <Presentation.LinkEnabledTextView
-        android:id="@+id/linkenabledtextview"
+    <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
-        android:padding="5sp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"/>
+        android:layout_height="match_parent"
+        android:layout_weight="3.0"
+        android:background="#282a35"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282a35"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Planting"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <!-- Body -->
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/mainScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top|center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:visibility="gone"
+                            android:src="@drawable/healthy_crop"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_horizontal|center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:gravity="top|center_horizontal|center_vertical"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/tr_planter1"/>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+
+                    <Presentation.LinkEnabledTextView
+                        android:id="@+id/linkenabledtextview"
+                        android:layout_width="match_parent"
+                        android:padding="5sp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.0"
+        android:background="#F2F2F2"
+        android:gravity="bottom|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#282a35"
+                android:text="Back"
+                android:textColor="#FFEB3B"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
+
