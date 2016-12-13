@@ -38,7 +38,16 @@
         <activity android:name=".True_Potato_Seed" />
         <activity android:name=".Varieties" />
         <activity android:name=".GrowingConditions" />
-        <activity android:name=".Growth_and_Development"></activity>
+        <activity android:name=".Growth_and_Development" />
+        <activity android:name=".SeedSizenSpacing" />
+        <activity android:name=".PreSprouting" />
+        <activity android:name=".SeedDormancy" />
+        <activity android:name=".Removalofseedfromcoldstores" />
+        <activity android:name=".Chemical_Methord" />
+        <activity android:name=".Seed_Cutting" />
+        <activity android:name="._Precautions_to_be_taken" />
+        <activity android:name=".Preplantingtillage" />
+        <activity android:name=".Postplantingtillage"></activity>
     </application>
 
 </manifest>
