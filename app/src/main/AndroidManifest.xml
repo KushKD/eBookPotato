@@ -81,7 +81,23 @@
         <activity android:name=".Integratedweedmanagement" />
         <activity android:name=".Timingofweedcontrol" />
         <activity android:name=".Weedcontrolinsequentialormultiplecropping" />
-        <activity android:name=".WeedcontrolinIntercropping"></activity>
+        <activity android:name=".WeedcontrolinIntercropping" />
+        <activity android:name=".Lateblight" />
+        <activity android:name=".EarlyBlight" />
+        <activity android:name=".Wart" />
+        <activity android:name=".Scrab" />
+        <activity android:name=".BlackScurf" />
+        <activity android:name=".Bacterialwilt" />
+        <activity android:name=".SoftRotBlackLeg" />
+        <activity android:name=".Virus" />
+        <activity android:name=".CutWorm" />
+        <activity android:name=".Whitegrubs" />
+        <activity android:name=".Aphids" />
+        <activity android:name=".Leafhoppers" />
+        <activity android:name=".Tubermoth" />
+        <activity android:name=".Mite" />
+        <activity android:name=".Cystnematode" />
+        <activity android:name=".RootKnot"></activity>
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#282a35"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="Haulms Cutting"
+            android:text="Wart"
             android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -65,8 +65,7 @@
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-
-                            android:src="@drawable/sprinkler"/>
+                            android:src="@drawable/lb_leaf1"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -80,7 +79,7 @@
                             android:gravity="top|center_horizontal|center_vertical"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/haulm2"/>
+                            android:src="@drawable/wartfig"/>
                     </LinearLayout>
 
 
