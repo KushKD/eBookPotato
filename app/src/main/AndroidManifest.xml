@@ -112,7 +112,18 @@
         <activity android:name=".CIPC" />
         <activity android:name=".Naturalsubstances" />
         <activity android:name=".Irradiation" />
-        <activity android:name=".Countrystores"></activity>
+        <activity android:name=".Countrystores" />
+        <activity android:name=".Chips" />
+        <activity android:name=".FrenchFries" />
+        <activity android:name=".Flakes" />
+        <activity android:name=".Dehydratedchips" />
+        <activity android:name=".Potatosticks" />
+        <activity android:name=".Custardpowder" />
+        <activity android:name=".Potatosoupthickener" />
+        <activity android:name=".Potatostarchflour" />
+        <activity android:name=".dehydratedproducts" />
+        <activity android:name=".Varietiesforprocessing" />
+        <activity android:name=".Areas"></activity>
     </application>
 
 </manifest>

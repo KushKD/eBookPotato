@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#282a35"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="Processing"
+            android:text="Village level dehydrated products"
             android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -58,14 +58,9 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:visibility="gone"
                         android:gravity="top|center_horizontal|center_vertical"
                         android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:src="@drawable/aphidgp"/>
                     </LinearLayout>
 
 
