@@ -1,5 +1,6 @@
 package com.honsol.potatoebook;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
@@ -14,6 +16,7 @@ import Presentation.LinkEnabledTextView;
 public class GrowingConditions extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
+    Button back_Bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +37,30 @@ public class GrowingConditions extends AppCompatActivity implements TextLinkClic
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GrowingConditions.this.finish();
+            }
+        });
     }
 
     @Override
     public void onTextLinkClick(View textView, String clickedString) {
         if(clickedString.equalsIgnoreCase("_land_preparation")){
-            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent cv = new Intent(GrowingConditions.this,CP_LandPrepration.class);
+            startActivity(cv);
         }else if(clickedString.equalsIgnoreCase("_fertilizers")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent cv = new Intent(GrowingConditions.this,CP_Fertilization.class);
+            startActivity(cv);
         }else if(clickedString.equalsIgnoreCase("_irrigation")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent cv = new Intent(GrowingConditions.this,CP_Irrigation.class);
+            startActivity(cv);
         }else if(clickedString.equalsIgnoreCase("_pests_and_diseases")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent cv = new Intent(GrowingConditions.this,CP_PlantProtection.class);
+            startActivity(cv);
         }else{
             Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
         }
