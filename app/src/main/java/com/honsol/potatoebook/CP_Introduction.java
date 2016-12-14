@@ -9,15 +9,19 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class CP_Introduction extends BaseActivity implements TextLinkClickListener {
 
     private  LinkEnabledTextView check;
     Button back_Bt;
+
+    ImageView imageView1,imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,25 @@ public class CP_Introduction extends BaseActivity implements TextLinkClickListen
             @Override
             public void onClick(View v) {
                 CP_Introduction.this.finish();
+            }
+        });
+
+        imageView1 = (ImageView) findViewById(R.id.imageView1);
+        imageView2 = (ImageView) findViewById(R.id.imageView2);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(CP_Introduction.this,"healthy_crop");
+            }
+        });
+
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(CP_Introduction.this,"pot_field2");
             }
         });
     }
