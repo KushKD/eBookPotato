@@ -7,6 +7,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
@@ -14,6 +15,7 @@ import Presentation.LinkEnabledTextView;
 public class CP_Harvesting extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
+    Button back_Bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,18 +37,24 @@ public class CP_Harvesting extends AppCompatActivity implements TextLinkClickLis
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CP_Harvesting.this.finish();
+            }
+        });
     }
 
     @Override
     public void onTextLinkClick(View textView, String clickedString) {
         if(clickedString.equalsIgnoreCase("_plough")){
-            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
+           //TODO Images
         }else if(clickedString.equalsIgnoreCase("_expose_the_tubers")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+           //TODO IMAGES
         }else if(clickedString.equalsIgnoreCase("_specialised_harvesters")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
-        }else if(clickedString.equalsIgnoreCase("Khurpa")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+           //TODO IMAGES
         }else{
             Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
         }

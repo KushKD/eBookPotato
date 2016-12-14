@@ -51,26 +51,27 @@ public class PhosphorusandPotash extends AppCompatActivity implements TextLinkCl
 
     @Override
     public void onTextLinkClick(View textView, String clickedString) {
-        if(clickedString.equalsIgnoreCase("_requirement_of_P_&_K")){
-            Intent x = new Intent(PhosphorusandPotash.this,Plantprocesses.class);
+        if(clickedString.equalsIgnoreCase("_requirement_of_P_")){
+            Intent x = new Intent(PhosphorusandPotash.this,RequirementofPK.class);
             startActivity(x);
         }else if(clickedString.equalsIgnoreCase("_application_rate")){
-            Intent x = new Intent(PhosphorusandPotash.this,Micronutrientdeficiencies.class);
+            Intent x = new Intent(PhosphorusandPotash.this,ApplicationRateP.class);
             startActivity(x);
         }else if(clickedString.equalsIgnoreCase("_time_of_application")) {
-
+            Intent x = new Intent(PhosphorusandPotash.this,TimeOfApplicationP.class);
+            startActivity(x);
         }else if(clickedString.equalsIgnoreCase("_method_of_application")) {
-            Intent x = new Intent(PhosphorusandPotash.this,SourceMicro.class);
+            Intent x = new Intent(PhosphorusandPotash.this,MethordOfApplication.class);
             startActivity(x);
 
         }else if(clickedString.equalsIgnoreCase("_resistance_against_frost")) {
-            Intent x = new Intent(PhosphorusandPotash.this,Relationship_between_micro_nutrients.class);
+            Intent x = new Intent(PhosphorusandPotash.this,Resistanceagainstfrost.class);
             startActivity(x);
         }else if(clickedString.equalsIgnoreCase("_moisture_stress")) {
-            Intent x = new Intent(PhosphorusandPotash.this,TimeOfAppliaction.class);
+            Intent x = new Intent(PhosphorusandPotash.this,EffectofPKonresponsetomoisturestress.class);
             startActivity(x);
         }else if(clickedString.equalsIgnoreCase("_biotic_stress")) {
-            Intent x = new Intent(PhosphorusandPotash.this,TimeOfAppliaction.class);
+            Intent x = new Intent(PhosphorusandPotash.this,EffectofPKnutritiononresponsetobioticstress.class);
             startActivity(x);
         }else{
             //time of application

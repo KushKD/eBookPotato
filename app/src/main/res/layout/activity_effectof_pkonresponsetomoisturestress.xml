@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#282a35"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="Sorting and Grading"
+            android:text="Effect of P and K on response to moisture stress"
             android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -49,7 +49,7 @@
                 android:gravity="center|center_horizontal|center_vertical"
                 android:orientation="vertical">
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="match_parent"   android:visibility="gone"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal|center_vertical"
                     android:orientation="horizontal">
@@ -79,7 +79,7 @@
                             android:gravity="top|center_horizontal|center_vertical"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/grader"/>
+                            android:src="@drawable/tr_planter1"/>
                     </LinearLayout>
 
 

@@ -5,21 +5,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
 
-public class CP_sortingGrading extends AppCompatActivity   implements TextLinkClickListener {
+public class ApplicationRateP extends AppCompatActivity implements TextLinkClickListener {
 
-    Button back_Bt;
     private LinkEnabledTextView check;
+    Button back_Bt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cp_sorting_grading);
-        String text  =  "Grading is a critical operation in potato, which is required for easy marketing and to get a good price for the produce.  Normally for house hold consumption, medium sized tubers are preferred.  In the case of the seed crop, small to medium sized tubers are preferred while in the case of processing large sized tubers are generally preferred.  Grading is done both by hand as well as graders.  Various types of graders of various capacities are available in the market.";
+        setContentView(R.layout.activity_application_rate_p);
+
+        String text  =  "Mixing of small amount of farm yard manure (5 t/ha) with P and K fertilizer at the time of planting and its application in furrows economizes up to 25 % on P and K doses. Another way is to soak seed tubers in 0.2 % P solution of monoammonium phosphate containing 0.2 per cent mancozeb for 4 hours or in a solution of 1.5% of single super phosphate and 0.5 % urea and drying them in shade before planting This technique results in saving about  22-25 Kg of P/ha.\n" +
+                "\n" +
+                "What is the economic optima at different locations/situations";
+
         check = (LinkEnabledTextView)findViewById(R.id.linkenabledtextview) ;
         // check = new LinkEnabledTextView(this, null);
         check.setOnTextLinkClickListener(this);
@@ -39,7 +45,7 @@ public class CP_sortingGrading extends AppCompatActivity   implements TextLinkCl
         back_Bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CP_sortingGrading.this.finish();
+                ApplicationRateP.this.finish();
             }
         });
     }

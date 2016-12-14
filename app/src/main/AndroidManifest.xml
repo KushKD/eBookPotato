@@ -67,7 +67,14 @@
         <activity android:name=".Relationship_between_micro_nutrients" />
         <activity android:name=".TimeOfAppliaction" />
         <activity android:name=".SourceMicro" />
-        <activity android:name=".PhosphorusandPotash"></activity>
+        <activity android:name=".PhosphorusandPotash" />
+        <activity android:name=".RequirementofPK" />
+        <activity android:name=".ApplicationRateP" />
+        <activity android:name=".TimeOfApplicationP" />
+        <activity android:name=".MethordOfApplication" />
+        <activity android:name=".Resistanceagainstfrost" />
+        <activity android:name=".EffectofPKonresponsetomoisturestress" />
+        <activity android:name=".EffectofPKnutritiononresponsetobioticstress"></activity>
     </application>
 
 </manifest>
