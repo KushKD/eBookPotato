@@ -1,5 +1,6 @@
 package com.honsol.potatoebook;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +8,14 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
 
 public class CP_Weeding extends AppCompatActivity implements TextLinkClickListener {
     private LinkEnabledTextView check;
+    Button back_Bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,14 @@ public class CP_Weeding extends AppCompatActivity implements TextLinkClickListen
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CP_Weeding.this.finish();
+            }
+        });
     }
 
     @Override
@@ -40,19 +51,26 @@ public class CP_Weeding extends AppCompatActivity implements TextLinkClickListen
 
         //Log.e("Hyperlink is :: " + clickedString, "Hyperlink is :: " + clickedString);
         if (clickedString.equalsIgnoreCase("_potato_they_are_more_serious")) {
-            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
-        } else if (clickedString.equalsIgnoreCase(" _cultural_methods")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent x = new Intent(CP_Weeding.this,WeedprobleminPotato.class);
+            startActivity(x);
+        } else if (clickedString.equalsIgnoreCase("_cultural_methods")) {
+            Intent x = new Intent(CP_Weeding.this,CulturalmethodsWeed.class);
+            startActivity(x);
         } else if (clickedString.equalsIgnoreCase("_chemical_weed_control")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent x = new Intent(CP_Weeding.this,Chemicalweedcontrol.class);
+            startActivity(x);
         } else if (clickedString.equalsIgnoreCase("_integrated_weed_control")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent x = new Intent(CP_Weeding.this,Integratedweedmanagement.class);
+            startActivity(x);
         } else if (clickedString.equalsIgnoreCase("_properly_timed")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
-        } else if (clickedString.equalsIgnoreCase(" _crop_sequence")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
-        } else if (clickedString.equalsIgnoreCase(" _intercropping")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent x = new Intent(CP_Weeding.this,Timingofweedcontrol.class);
+            startActivity(x);
+        } else if (clickedString.equalsIgnoreCase("_crop_sequence")) {
+            Intent x = new Intent(CP_Weeding.this,Weedcontrolinsequentialormultiplecropping.class);
+            startActivity(x);
+        } else if (clickedString.equalsIgnoreCase("_intercropping")) {
+            Intent x = new Intent(CP_Weeding.this,WeedcontrolinIntercropping.class);
+            startActivity(x);
         } else {
             Log.e("Hyperlink is :x: " + clickedString, "Hyperlink is :: " + clickedString);
         }

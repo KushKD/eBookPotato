@@ -74,7 +74,14 @@
         <activity android:name=".MethordOfApplication" />
         <activity android:name=".Resistanceagainstfrost" />
         <activity android:name=".EffectofPKonresponsetomoisturestress" />
-        <activity android:name=".EffectofPKnutritiononresponsetobioticstress"></activity>
+        <activity android:name=".EffectofPKnutritiononresponsetobioticstress" />
+        <activity android:name=".WeedprobleminPotato" />
+        <activity android:name=".CulturalmethodsWeed" />
+        <activity android:name=".Chemicalweedcontrol" />
+        <activity android:name=".Integratedweedmanagement" />
+        <activity android:name=".Timingofweedcontrol" />
+        <activity android:name=".Weedcontrolinsequentialormultiplecropping" />
+        <activity android:name=".WeedcontrolinIntercropping"></activity>
     </application>
 
 </manifest>
