@@ -97,7 +97,22 @@
         <activity android:name=".Tubermoth" />
         <activity android:name=".Mite" />
         <activity android:name=".Cystnematode" />
-        <activity android:name=".RootKnot"></activity>
+        <activity android:name=".RootKnot" />
+        <activity android:name=".Physiologicalstorage" />
+        <activity android:name=".Pathological" />
+        <activity android:name=".Biochemical" />
+        <activity android:name=".Carbohydratecontent" />
+        <activity android:name=".Nitrogenfractions" />
+        <activity android:name=".Enzymesystems" />
+        <activity android:name=".Coldstores" />
+        <activity android:name=".Processingstorage" />
+        <activity android:name=".Sprout_inhibition" />
+        <activity android:name=".TCNB" />
+        <activity android:name=".MH" />
+        <activity android:name=".CIPC" />
+        <activity android:name=".Naturalsubstances" />
+        <activity android:name=".Irradiation" />
+        <activity android:name=".Countrystores"></activity>
     </application>
 
 </manifest>

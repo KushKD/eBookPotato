@@ -1,5 +1,6 @@
 package com.honsol.potatoebook;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
@@ -14,7 +16,7 @@ import Presentation.LinkEnabledTextView;
 public class CP_Storage  extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
-
+    Button back_Bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,54 +36,78 @@ public class CP_Storage  extends AppCompatActivity implements TextLinkClickListe
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        back_Bt = (Button)findViewById(R.id.back);
+        back_Bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CP_Storage.this.finish();
+            }
+        });
     }
 
     @Override
     public void onTextLinkClick(View textView, String clickedString) {
         if(clickedString.equalsIgnoreCase("_physiological")){
-            Log.e("Hyperlink is :1: " + clickedString, "Hyperlink is :: " + clickedString);
+
+            Intent z = new Intent(CP_Storage.this,Physiologicalstorage.class);
+            startActivity(z);
+        } else if(clickedString.equalsIgnoreCase("_pathological")) {
+            Intent z = new Intent(CP_Storage.this,Pathological.class);
+            startActivity(z);
         }
-        else if(clickedString.equalsIgnoreCase("_pathological")){
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
-        }
+
         else if(clickedString.equalsIgnoreCase("_biochemical")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Biochemical.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_carbohydrate_content")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Carbohydratecontent.class);
+            startActivity(z);
         }
-        else if(clickedString.equalsIgnoreCase("_nitrogen_fractions,")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        else if(clickedString.equalsIgnoreCase("_nitrogen_fractions")) {
+            Intent z = new Intent(CP_Storage.this,Nitrogenfractions.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_enzyme_systems")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Enzymesystems.class);
+            startActivity(z);
         }
-        else if(clickedString.equalsIgnoreCase("_cold_stores ")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        else if(clickedString.equalsIgnoreCase("_cold_stores")) {
+            Intent z = new Intent(CP_Storage.this,Coldstores.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_processing_storage")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Processingstorage.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_sprout_inhibition")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Sprout_inhibition.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_TCNB")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,TCNB.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_MH")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,MH.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_CIPC")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,CIPC.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_natural_substance")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+            Intent z = new Intent(CP_Storage.this,Naturalsubstances.class);
+            startActivity(z);
         }
         else if(clickedString.equalsIgnoreCase("_irradiation")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+             Intent z = new Intent(CP_Storage.this,Irradiation.class);
+            startActivity(z);
         }
-        else if(clickedString.equalsIgnoreCase("_country stores")) {
-            Log.e("Hyperlink is :2: " + clickedString, "Hyperlink is :: " + clickedString);
+        else if(clickedString.equalsIgnoreCase("_country_stores")) {
+            Intent z = new Intent(CP_Storage.this,Countrystores.class);
+            startActivity(z);
         }
         else {
             Log.e("Hyperlink is :x: " + clickedString, "Hyperlink is :: " + clickedString);
