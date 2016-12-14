@@ -7,9 +7,11 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class WeedcontrolinIntercropping extends AppCompatActivity implements TextLinkClickListener {
     private LinkEnabledTextView check;
@@ -41,6 +43,28 @@ public class WeedcontrolinIntercropping extends AppCompatActivity implements Tex
             @Override
             public void onClick(View v) {
                 WeedcontrolinIntercropping.this.finish();
+            }
+        });
+
+
+
+        ImageView  imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(WeedcontrolinIntercropping.this,"pot_gar2");
+            }
+        });
+
+
+        ImageView  imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(WeedcontrolinIntercropping.this,"wh_pot1");
             }
         });
     }

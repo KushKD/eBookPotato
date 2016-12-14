@@ -9,9 +9,11 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class CP_Planting extends AppCompatActivity implements TextLinkClickListener {
     private LinkEnabledTextView check;
@@ -42,6 +44,16 @@ public class CP_Planting extends AppCompatActivity implements TextLinkClickListe
             @Override
             public void onClick(View v) {
                 CP_Planting.this.finish();
+            }
+        });
+
+        ImageView  imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(CP_Planting.this,"tr_planter1");
             }
         });
     }

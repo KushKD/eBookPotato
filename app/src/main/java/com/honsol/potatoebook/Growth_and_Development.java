@@ -8,9 +8,11 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Growth_and_Development extends AppCompatActivity implements TextLinkClickListener {
 
@@ -46,6 +48,17 @@ public class Growth_and_Development extends AppCompatActivity implements TextLin
                 Growth_and_Development.this.finish();
             }
         });
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Growth_and_Development.this,"grothndevelopment");
+            }
+        });
+
     }
 
     @Override

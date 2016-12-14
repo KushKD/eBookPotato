@@ -63,6 +63,7 @@
 
                         <ImageView
                             android:layout_width="150dp"
+                            android:id="@+id/imageView1"
                             android:layout_height="150dp"
                             android:src="@drawable/aphidgp"/>
                     </LinearLayout>
@@ -78,6 +79,7 @@
                             android:gravity="top|center_horizontal|center_vertical"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:id="@+id/imageView2"
                             android:src="@drawable/aphidgpwinged"/>
                     </LinearLayout>
 

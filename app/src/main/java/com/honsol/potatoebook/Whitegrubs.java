@@ -7,9 +7,11 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Whitegrubs extends AppCompatActivity implements TextLinkClickListener {
 
@@ -46,6 +48,28 @@ public class Whitegrubs extends AppCompatActivity implements TextLinkClickListen
             @Override
             public void onClick(View v) {
                 Whitegrubs.this.finish();
+            }
+        });
+
+
+
+        ImageView  imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Whitegrubs.this,"whitegrub1");
+            }
+        });
+
+
+        ImageView  imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Whitegrubs.this,"whitegrub2");
             }
         });
     }

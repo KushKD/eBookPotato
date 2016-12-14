@@ -8,9 +8,11 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Lateblight extends AppCompatActivity implements TextLinkClickListener {
 
@@ -43,6 +45,28 @@ public class Lateblight extends AppCompatActivity implements TextLinkClickListen
             @Override
             public void onClick(View v) {
                 Lateblight.this.finish();
+            }
+        });
+
+
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Lateblight.this,"lb_leaf1");
+            }
+        });
+
+
+        ImageView  imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Lateblight.this,"lb_rottage_in_flesh2");
             }
         });
     }

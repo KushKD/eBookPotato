@@ -7,9 +7,11 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class CP_Haulmscutting extends AppCompatActivity implements TextLinkClickListener {
 
@@ -41,6 +43,17 @@ public class CP_Haulmscutting extends AppCompatActivity implements TextLinkClick
             @Override
             public void onClick(View v) {
                 CP_Haulmscutting.this.finish();
+            }
+        });
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(CP_Haulmscutting.this,"haulm2");
             }
         });
     }

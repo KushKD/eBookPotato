@@ -9,9 +9,11 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Removalofseedfromcoldstores extends AppCompatActivity implements TextLinkClickListener {
 
@@ -48,6 +50,16 @@ public class Removalofseedfromcoldstores extends AppCompatActivity implements Te
                 check.setMovementMethod(LinkMovementMethod.getInstance());
             }
         }
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Removalofseedfromcoldstores.this,"commercial_cs1");
+            }
+        });
     }
 
     @Override

@@ -8,9 +8,11 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Chips extends AppCompatActivity implements TextLinkClickListener {
 
@@ -41,6 +43,28 @@ public class Chips extends AppCompatActivity implements TextLinkClickListener {
             @Override
             public void onClick(View v) {
                 Chips.this.finish();
+            }
+        });
+
+
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Chips.this,"chips1");
+            }
+        });
+
+
+        ImageView  imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Chips.this,"chips2");
             }
         });
 

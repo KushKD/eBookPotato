@@ -9,14 +9,17 @@ import android.text.method.MovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class CP_Fertilization extends AppCompatActivity implements TextLinkClickListener {
 
     private LinkEnabledTextView check;
     Button back_Bt;
+    ImageView imageView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,16 @@ public class CP_Fertilization extends AppCompatActivity implements TextLinkClick
             @Override
             public void onClick(View v) {
                 CP_Fertilization.this.finish();
+            }
+        });
+
+        imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(CP_Fertilization.this,"k_deff2");
             }
         });
     }

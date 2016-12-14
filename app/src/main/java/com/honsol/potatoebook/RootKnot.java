@@ -7,9 +7,11 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class RootKnot extends AppCompatActivity implements TextLinkClickListener {
 
@@ -62,6 +64,37 @@ public class RootKnot extends AppCompatActivity implements TextLinkClickListener
             @Override
             public void onClick(View v) {
                 RootKnot.this.finish();
+            }
+        });
+
+
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(RootKnot.this,"rootknematode2");
+            }
+        });
+
+
+        ImageView  imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(RootKnot.this,"rootknematode1");
+            }
+        });
+
+        ImageView  imageView3 = (ImageView) findViewById(R.id.imageView3);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(RootKnot.this,"rknfigactual");
             }
         });
     }

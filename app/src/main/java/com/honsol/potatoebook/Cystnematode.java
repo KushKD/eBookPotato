@@ -7,9 +7,11 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import Interfaces.TextLinkClickListener;
 import Presentation.LinkEnabledTextView;
+import Utils.Custom_Dialog;
 
 public class Cystnematode extends AppCompatActivity implements TextLinkClickListener {
 
@@ -43,6 +45,17 @@ public class Cystnematode extends AppCompatActivity implements TextLinkClickList
             @Override
             public void onClick(View v) {
                 Cystnematode.this.finish();
+            }
+        });
+
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Custom_Dialog CD = new Custom_Dialog();
+                CD.showDialog(Cystnematode.this,"cystpic");
             }
         });
     }
