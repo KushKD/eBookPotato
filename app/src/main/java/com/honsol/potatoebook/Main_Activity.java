@@ -40,14 +40,14 @@ public class Main_Activity extends AppCompatActivity {
 
 
     public static int[] prgmImages = {
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher
+            R.mipmap.facts,
+            R.mipmap.research,
+            R.mipmap.planting,
+            R.mipmap.potatoseed,
+            R.mipmap.varieties,
+            R.mipmap.conditions,
+            R.mipmap.growth,
+            R.mipmap.packageofpractice
            };
 
     @Override

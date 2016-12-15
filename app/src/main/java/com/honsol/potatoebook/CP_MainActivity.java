@@ -32,20 +32,20 @@ public class CP_MainActivity extends AppCompatActivity {
 
 
     public static int[] prgmImages = {
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher};
+            R.mipmap.introduction,
+            R.mipmap.seedprepration,
+            R.mipmap.landprepration,
+            R.mipmap.planting,
+            R.mipmap.fertilization,
+            R.mipmap.irrigation,
+            R.mipmap.weeding,
+            R.mipmap.earthingup,
+            R.mipmap.plantprotection,
+            R.mipmap.cutting,
+            R.mipmap.harvesting,
+            R.mipmap.storing,
+            R.mipmap.storage,
+            R.mipmap.processing};
 
 
     @Override

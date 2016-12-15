@@ -7,123 +7,335 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/potatoseed"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main_Activity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CP_Introduction" />
-        <activity android:name=".CP_SeedPrepration" />
-        <activity android:name=".CP_LandPrepration" />
-        <activity android:name=".CP_Planting" />
-        <activity android:name=".CP_Fertilization" />
-        <activity android:name=".CP_Irrigation" />
-        <activity android:name=".CP_Weeding" />
-        <activity android:name=".CP_EarthingUp" />
-        <activity android:name=".CP_PlantProtection" />
-        <activity android:name=".CP_Haulmscutting" />
-        <activity android:name=".CP_Harvesting" />
-        <activity android:name=".CP_sortingGrading" />
-        <activity android:name=".CP_Storage" />
-        <activity android:name=".CP_Processing" />
-        <activity android:name=".CP_MainActivity" />
-        <activity android:name=".PDFViewActivity" />
-        <activity android:name=".PoP_List" />
-        <activity android:name=".True_Potato_Seed" />
-        <activity android:name=".Varieties" />
-        <activity android:name=".GrowingConditions" />
-        <activity android:name=".Growth_and_Development" />
-        <activity android:name=".SeedSizenSpacing" />
-        <activity android:name=".PreSprouting" />
-        <activity android:name=".SeedDormancy" />
-        <activity android:name=".Removalofseedfromcoldstores" />
-        <activity android:name=".Chemical_Methord" />
-        <activity android:name=".Seed_Cutting" />
-        <activity android:name="._Precautions_to_be_taken" />
-        <activity android:name=".Preplantingtillage" />
-        <activity android:name=".Postplantingtillage" />
-        <activity android:name=".Methodofplanting" />
-        <activity android:name=".Nitrogen" />
-        <activity android:name=".ImportanceOfN" />
-        <activity android:name=".Amount" />
-        <activity android:name=".Time" />
-        <activity android:name=".Source" />
-        <activity android:name=".UseofslowreleaseNsources" />
-        <activity android:name=".VarietyNitrogen" />
-        <activity android:name=".SplitsNitrogen" />
-        <activity android:name=".FoliarfeedingNitrogen" />
-        <activity android:name=".Residualeffect" />
-        <activity android:name=".CalciumnMagnisium" />
-        <activity android:name=".Sulphur" />
-        <activity android:name=".Micronutrient" />
-        <activity android:name=".Plantprocesses" />
-        <activity android:name=".Micronutrientdeficiencies" />
-        <activity android:name=".Relationship_between_micro_nutrients" />
-        <activity android:name=".TimeOfAppliaction" />
-        <activity android:name=".SourceMicro" />
-        <activity android:name=".PhosphorusandPotash" />
-        <activity android:name=".RequirementofPK" />
-        <activity android:name=".ApplicationRateP" />
-        <activity android:name=".TimeOfApplicationP" />
-        <activity android:name=".MethordOfApplication" />
-        <activity android:name=".Resistanceagainstfrost" />
-        <activity android:name=".EffectofPKonresponsetomoisturestress" />
-        <activity android:name=".EffectofPKnutritiononresponsetobioticstress" />
-        <activity android:name=".WeedprobleminPotato" />
-        <activity android:name=".CulturalmethodsWeed" />
-        <activity android:name=".Chemicalweedcontrol" />
-        <activity android:name=".Integratedweedmanagement" />
-        <activity android:name=".Timingofweedcontrol" />
-        <activity android:name=".Weedcontrolinsequentialormultiplecropping" />
-        <activity android:name=".WeedcontrolinIntercropping" />
-        <activity android:name=".Lateblight" />
-        <activity android:name=".EarlyBlight" />
-        <activity android:name=".Wart" />
-        <activity android:name=".Scrab" />
-        <activity android:name=".BlackScurf" />
-        <activity android:name=".Bacterialwilt" />
-        <activity android:name=".SoftRotBlackLeg" />
-        <activity android:name=".Virus" />
-        <activity android:name=".CutWorm" />
-        <activity android:name=".Whitegrubs" />
-        <activity android:name=".Aphids" />
-        <activity android:name=".Leafhoppers" />
-        <activity android:name=".Tubermoth" />
-        <activity android:name=".Mite" />
-        <activity android:name=".Cystnematode" />
-        <activity android:name=".RootKnot" />
-        <activity android:name=".Physiologicalstorage" />
-        <activity android:name=".Pathological" />
-        <activity android:name=".Biochemical" />
-        <activity android:name=".Carbohydratecontent" />
-        <activity android:name=".Nitrogenfractions" />
-        <activity android:name=".Enzymesystems" />
-        <activity android:name=".Coldstores" />
-        <activity android:name=".Processingstorage" />
-        <activity android:name=".Sprout_inhibition" />
-        <activity android:name=".TCNB" />
-        <activity android:name=".MH" />
-        <activity android:name=".CIPC" />
-        <activity android:name=".Naturalsubstances" />
-        <activity android:name=".Irradiation" />
-        <activity android:name=".Countrystores" />
-        <activity android:name=".Chips" />
-        <activity android:name=".FrenchFries" />
-        <activity android:name=".Flakes" />
-        <activity android:name=".Dehydratedchips" />
-        <activity android:name=".Potatosticks" />
-        <activity android:name=".Custardpowder" />
-        <activity android:name=".Potatosoupthickener" />
-        <activity android:name=".Potatostarchflour" />
-        <activity android:name=".dehydratedproducts" />
-        <activity android:name=".Varietiesforprocessing" />
-        <activity android:name=".Areas"></activity>
+        <activity
+            android:name=".CP_Introduction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_SeedPrepration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_LandPrepration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Planting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Fertilization"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Irrigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Weeding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_EarthingUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_PlantProtection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Haulmscutting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Harvesting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_sortingGrading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Storage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_Processing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CP_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PDFViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PoP_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".True_Potato_Seed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Varieties"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GrowingConditions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Growth_and_Development"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeedSizenSpacing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreSprouting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeedDormancy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Removalofseedfromcoldstores"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chemical_Methord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Seed_Cutting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._Precautions_to_be_taken"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Preplantingtillage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Postplantingtillage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Methodofplanting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nitrogen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImportanceOfN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Amount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Source"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UseofslowreleaseNsources"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VarietyNitrogen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplitsNitrogen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FoliarfeedingNitrogen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Residualeffect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalciumnMagnisium"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sulphur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Micronutrient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Plantprocesses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Micronutrientdeficiencies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Relationship_between_micro_nutrients"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeOfAppliaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SourceMicro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhosphorusandPotash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RequirementofPK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ApplicationRateP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeOfApplicationP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MethordOfApplication"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resistanceagainstfrost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EffectofPKonresponsetomoisturestress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EffectofPKnutritiononresponsetobioticstress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeedprobleminPotato"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CulturalmethodsWeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chemicalweedcontrol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Integratedweedmanagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Timingofweedcontrol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Weedcontrolinsequentialormultiplecropping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeedcontrolinIntercropping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lateblight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EarlyBlight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Scrab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BlackScurf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bacterialwilt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SoftRotBlackLeg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Virus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CutWorm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Whitegrubs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Aphids"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Leafhoppers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tubermoth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cystnematode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RootKnot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Physiologicalstorage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathological"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Biochemical"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Carbohydratecontent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nitrogenfractions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Enzymesystems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coldstores"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Processingstorage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sprout_inhibition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TCNB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MH"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CIPC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Naturalsubstances"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Irradiation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Countrystores"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FrenchFries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Flakes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dehydratedchips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Potatosticks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Custardpowder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Potatosoupthickener"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Potatostarchflour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dehydratedproducts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Varietiesforprocessing"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Areas" />
+        <activity android:name=".Main_Activity" />
+        <activity android:name=".Permissions"></activity>
     </application>
 
 </manifest>
