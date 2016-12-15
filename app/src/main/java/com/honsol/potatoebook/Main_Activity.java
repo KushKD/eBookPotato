@@ -34,7 +34,8 @@ public class Main_Activity extends AppCompatActivity {
             "Varieties",
             "Growing Conditions",
             "Groth and Development",
-            "Package of Practices"};
+            "Package of Practices",
+            "About Us"};
 
     String dir_path = Environment.getExternalStorageDirectory() + "//PotatoeBook//";
 
@@ -47,7 +48,8 @@ public class Main_Activity extends AppCompatActivity {
             R.mipmap.varieties,
             R.mipmap.conditions,
             R.mipmap.growth,
-            R.mipmap.packageofpractice
+            R.mipmap.packageofpractice,
+            R.mipmap.introduction
            };
 
     @Override

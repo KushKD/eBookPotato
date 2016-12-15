@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.honsol.potatoebook.AboutUs;
 import com.honsol.potatoebook.CP_EarthingUp;
 import com.honsol.potatoebook.CP_Fertilization;
 import com.honsol.potatoebook.CP_Irrigation;
@@ -151,6 +152,9 @@ public class Main_MenuAdapter extends BaseAdapter {
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Package of Practices")) {
                     Intent intent = new Intent(context, PoP_List.class);
+                    context.startActivity(intent);
+                }else if (result[position].equalsIgnoreCase("About Us")) {
+                    Intent intent = new Intent(context, AboutUs.class);
                     context.startActivity(intent);
                 } else
 

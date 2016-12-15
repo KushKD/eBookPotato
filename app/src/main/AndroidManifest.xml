@@ -335,7 +335,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".Areas" />
         <activity android:name=".Main_Activity" />
-        <activity android:name=".Permissions"></activity>
+        <activity android:name=".Permissions" />
+        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

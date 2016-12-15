@@ -22,7 +22,17 @@
         <LinearLayout
             android:layout_width="150dp"
             android:layout_height="80dp"
+            android:padding="5dp"
             android:background="@drawable/unnamed">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cprilogo">
 
         </LinearLayout>
 
@@ -73,7 +83,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#000000"
-            android:text="\u00A9 2016 HONSOL TECHNOLOGIES"
+            android:text="\u00A9 2016-2017 HONSOL TECHNOLOGIES"
             android:textSize="18sp"/>
     </LinearLayout>
 
