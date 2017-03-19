@@ -336,7 +336,8 @@
         <activity android:name=".Areas" />
         <activity android:name=".Main_Activity" />
         <activity android:name=".Permissions" />
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Portal"></activity>
     </application>
 
 </manifest>

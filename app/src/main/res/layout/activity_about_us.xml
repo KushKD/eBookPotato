@@ -44,7 +44,7 @@
                 android:text=" Central Potato Research Institute, Shimla 171 001, HP, India
 ( Indian Council of Agricultural Research )
 Fax : 91-177-2624060, Phone : 0177-2625182
-E-mail: dircpri@sancharnet.in  " />
+E-mail:  director.cpri@icar.gov.in " />
         </LinearLayout>
 
         <LinearLayout
@@ -69,7 +69,7 @@ E-mail: dircpri@sancharnet.in  " />
                 android:gravity="center|center_horizontal|center_vertical"
                 android:textSize="18dp"
                 android:textColor="#330000"
-                android:text="PM Govindakrishnan, SM Paul Khurana, SS Lal, VK Dua, Shashi Rawat and Islam Ahmad"/>
+                android:text="S.K. Chakrabarti , Sashi Rawat"/>
         </LinearLayout>
 
         <LinearLayout
@@ -83,22 +83,19 @@ E-mail: dircpri@sancharnet.in  " />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="right"
                 android:orientation="horizontal"
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="left|center_horizontal|center_vertical"
-                    android:padding="10dp"
-                    android:src="@drawable/unnamed"/>
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right|center_horizontal|center_vertical"
+                    android:src="@drawable/icar"/>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/cprilogo"/>
 
 

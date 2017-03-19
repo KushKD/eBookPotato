@@ -26,6 +26,7 @@ import com.honsol.potatoebook.GrowingConditions;
 import com.honsol.potatoebook.Growth_and_Development;
 import com.honsol.potatoebook.Main_Activity;
 import com.honsol.potatoebook.PoP_List;
+import com.honsol.potatoebook.Portal;
 import com.honsol.potatoebook.R;
 import com.honsol.potatoebook.True_Potato_Seed;
 import com.honsol.potatoebook.Varieties;
@@ -117,7 +118,7 @@ public class Main_MenuAdapter extends BaseAdapter {
                     }
 
 
-                } else if (result[position].toString().equalsIgnoreCase("Potato Research In India")) {
+                } else if (result[position].toString().equalsIgnoreCase("Potato Fact Files")) {
                     File file = new File(READ_PATH_SDCARD + "cpri-brow.pdf");
                     if (file.exists()) {
                         try {
@@ -147,11 +148,14 @@ public class Main_MenuAdapter extends BaseAdapter {
                 } else if (result[position].equalsIgnoreCase("Growing Conditions")) {
                     Intent intent = new Intent(context, GrowingConditions.class);
                     context.startActivity(intent);
-                } else if (result[position].equalsIgnoreCase("Groth and Development")) {
+                } else if (result[position].equalsIgnoreCase("Growth & Develop.")) {
                     Intent intent = new Intent(context, Growth_and_Development.class);
                     context.startActivity(intent);
                 } else if (result[position].equalsIgnoreCase("Package of Practices")) {
                     Intent intent = new Intent(context, PoP_List.class);
+                    context.startActivity(intent);
+                }else if (result[position].equalsIgnoreCase("Potato Portal")) {
+                    Intent intent = new Intent(context, Portal.class);
                     context.startActivity(intent);
                 }else if (result[position].equalsIgnoreCase("About Us")) {
                     Intent intent = new Intent(context, AboutUs.class);

@@ -27,14 +27,15 @@ public class Main_Activity extends AppCompatActivity {
     Context context;
     ArrayList prgmName;
     public static String[] prgmNameList = {
-            "Potato In India Fact Files",
+            "Potato Fact Files",
             "Potato Research In India",
             "Cultural Practices",
             "True Potato Seed",
             "Varieties",
             "Growing Conditions",
-            "Groth and Development",
+            "Growth & Develop.",
             "Package of Practices",
+            "Potato Portal",
             "About Us"};
 
     String dir_path = Environment.getExternalStorageDirectory() + "//PotatoeBook//";
@@ -49,6 +50,7 @@ public class Main_Activity extends AppCompatActivity {
             R.mipmap.conditions,
             R.mipmap.growth,
             R.mipmap.packageofpractice,
+            R.mipmap.portal,
             R.mipmap.introduction
            };
 
