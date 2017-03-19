@@ -97,7 +97,7 @@ public class Main_MenuAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                if (result[position].toString().equalsIgnoreCase("Potato In India Fact Files")) {
+                if (result[position].toString().equalsIgnoreCase("Potato Fact Files")) {
 
                     File file = new File(READ_PATH_SDCARD + "fact_file.pdf");
                     if (file.exists()) {
@@ -118,7 +118,7 @@ public class Main_MenuAdapter extends BaseAdapter {
                     }
 
 
-                } else if (result[position].toString().equalsIgnoreCase("Potato Fact Files")) {
+                } else if (result[position].toString().equalsIgnoreCase("Potato Research In India")) {
                     File file = new File(READ_PATH_SDCARD + "cpri-brow.pdf");
                     if (file.exists()) {
                         try {
