@@ -69,7 +69,7 @@ E-mail:  director.cpri@icar.gov.in " />
                 android:gravity="center|center_horizontal|center_vertical"
                 android:textSize="18dp"
                 android:textColor="#330000"
-                android:text="S.K. Chakrabarti , Sashi Rawat"/>
+                android:text="S.K. Chakrabarti , Shashi Rawat "/>
         </LinearLayout>
 
         <LinearLayout
