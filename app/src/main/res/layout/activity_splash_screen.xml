@@ -23,7 +23,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:padding="5dp"
-            android:background="@drawable/icar">
+            android:background="@drawable/looo"
+            >
 
         </LinearLayout>
 

@@ -102,14 +102,14 @@ public class Main_MenuAdapter extends BaseAdapter {
                     File file = new File(READ_PATH_SDCARD + "fact_file.pdf");
                     if (file.exists()) {
                         try {
-//                            Log.e("File", Boolean.toString(file.exists()));
-//                            Log.e("File", file.toString());
-//                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.fromFile(file));
-//                            intent.setDataAndType(Uri.fromFile(file), "application/pdf");
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-//                            context.startActivity(intent);
-                            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cpri.ernet.in/?page_id=8"));
-                            context.startActivity(browserIntent);
+                            Log.e("File", Boolean.toString(file.exists()));
+                            Log.e("File", file.toString());
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.fromFile(file));
+                            intent.setDataAndType(Uri.fromFile(file), "application/pdf");
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                            context.startActivity(intent);
+                           // Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(" http://14.139.61.83/ebook-cpri/next.htm"));
+                           // context.startActivity(browserIntent);
                         } catch (ActivityNotFoundException e) {
                             Toast.makeText(context, "Ops! Something went wrong. Restart the application.", Toast.LENGTH_LONG).show();
                            // context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.adobe.reader")));

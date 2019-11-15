@@ -65,7 +65,7 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:id="@+id/imageView1"
-                            android:src="@drawable/whitegrub1"/>
+                            android:src="@drawable/white_grub_one"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -80,7 +80,7 @@
                             android:layout_width="150dp"
                             android:id="@+id/imageView2"
                             android:layout_height="150dp"
-                            android:src="@drawable/whitegrub2"/>
+                            android:src="@drawable/white_grub_"/>
                     </LinearLayout>
 
 

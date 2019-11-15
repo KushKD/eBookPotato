@@ -43,7 +43,7 @@
                 android:textColor="#330000"
                 android:text=" Central Potato Research Institute, Shimla 171 001, HP, India
 ( Indian Council of Agricultural Research )
-Fax : 91-177-2624060, Phone : 0177-2625182
+Fax : 0177-2624460, Phone : 0177 - 2625073
 E-mail:  director.cpri@icar.gov.in " />
         </LinearLayout>
 
@@ -69,7 +69,7 @@ E-mail:  director.cpri@icar.gov.in " />
                 android:gravity="center|center_horizontal|center_vertical"
                 android:textSize="18dp"
                 android:textColor="#330000"
-                android:text="S.K. Chakrabarti , Shashi Rawat "/>
+                android:text="Shashi Rawat, S. K. Chakrabarti, V. K. Dua"/>
         </LinearLayout>
 
         <LinearLayout
@@ -90,8 +90,9 @@ E-mail:  director.cpri@icar.gov.in " />
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:background="@drawable/looo"
                     android:layout_gravity="right|center_horizontal|center_vertical"
-                    android:src="@drawable/icar"/>
+                    />
 
                 <ImageView
                     android:layout_width="80dp"
